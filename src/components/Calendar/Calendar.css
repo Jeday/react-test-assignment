@@ -1,0 +1,63 @@
+.container {
+  text-align: center;
+  font-size: 12pt;
+  box-sizing: border-box;
+  border: 4px solid rgb(82, 82, 82);
+  font-family: 'Roboto', sans-serif;
+  color: rgb(82, 82, 82);
+  height: 100%;
+  width: 100%;
+  min-width: 300px;  
+}
+.header {
+  box-sizing: border-box;
+  height: 40px;
+  position: relative;
+  padding: 10px 0;
+  border-bottom: 1px solid rgb(82, 82, 82);
+  text-align: center;
+}
+.header > svg {
+  position: absolute;
+  width: 20px;
+  cursor: pointer;
+}
+.header > svg:first-child {
+  left: 5px;
+}
+.header > svg:last-child {
+  right: 5px;
+}
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 1fr;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: calc(100% - 40px);
+}
+.cells {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr); 
+}
+.cell.active {
+  background-color: red !important;
+  color: white;
+}
+.cell,
+.cellWeekday {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid rgb(82, 82, 82);
+}
+.cell:hover {
+  cursor: pointer;
+  background-color: red !important;
+  color: white;
+}
