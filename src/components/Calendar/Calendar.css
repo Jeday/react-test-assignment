@@ -29,6 +29,7 @@
   right: 5px;
 }
 .weekdays {
+  height: 30px;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: 1fr;
@@ -40,7 +41,7 @@
   height: calc(100% - 40px);
 }
 .cells {
-  height: 100%;
+  height: calc(100% - 30px);
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(6, 1fr); 
