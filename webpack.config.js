@@ -29,7 +29,8 @@ module.exports = {
             importLoaders: 1,
             modules: true
           }
-        }
+        },
+        require.resolve('postcss-loader')
       ]
     },
     {
