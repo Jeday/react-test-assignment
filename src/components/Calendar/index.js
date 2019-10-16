@@ -18,6 +18,8 @@ const Calendar = ({ month, year, incMonth, decMonth, dateColors, selectDay }) =>
         month={month}
         dateColors={dateColors}
         selectDay={selectDay}
+        incMonth={incMonth}
+        decMonth={decMonth}
       />
     </div>
   )
